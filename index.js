@@ -3,7 +3,13 @@ const app=express();
 require("dotenv").config()
 
 
-const port = process.env.PORT
+
+app.use(express.json())
+
+const port=process.env.PORT
+
+
+
 app.listen(port,()=>{
     console.log(`aplicacion ejecutandose en el puerto ${port}`)
 })
