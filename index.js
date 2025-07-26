@@ -2,7 +2,7 @@ const express=require("express");
 const app=express();
 require("dotenv").config()
 
-const sequelize=require("./models/attendace")
+const sequelize=require("./models/attendance")
 
 const port = process.env.PORT
 app.listen(port,()=>{
