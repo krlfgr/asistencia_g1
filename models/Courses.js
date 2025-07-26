@@ -23,4 +23,4 @@ const Courses = sequelize.define('Courses', {
         allowNull:false
     }
 });
-module.exports = courses;
+module.exports = Courses;
