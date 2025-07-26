@@ -3,6 +3,7 @@ const app=express();
 
 require("dotenv").config()
 
+const sequelize=require("./models/attendance")
 
 
 app.use(express.json())
