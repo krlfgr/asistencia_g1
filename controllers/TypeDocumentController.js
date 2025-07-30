@@ -1,0 +1,1 @@
+const TypeDocument=require('../models/TypeDocument');

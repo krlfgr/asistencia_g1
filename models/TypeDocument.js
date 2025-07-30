@@ -2,9 +2,11 @@ const { DataTypes} = require('sequelize');
 const sequelize =require('../config/database');
 
 const TypeDocument = sequelize.define('TypeDocument',{
-    tipo:{
-        type:DataTypes.STRING,
-        allowNull:false
+    type:{
+        type:DataTypes.INTEGER,
+        allowNull:false,
+        unique:true
+        
     },
 });
 
