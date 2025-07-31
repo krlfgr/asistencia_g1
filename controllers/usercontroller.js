@@ -1,7 +1,7 @@
 const Usuario=require('../models/Usuario');
 
 
-exports.Usuariosdocument= async(req, res)=>{
+exports.Userdocument= async(req, res)=>{
     try{
         const usuarios = await Usuario.findALL();
         res.json(usuarios);
@@ -13,7 +13,7 @@ exports.Usuariosdocument= async(req, res)=>{
     
 }
 
-exports.Usuariosdocumenttype= async(req, res)=>{
+exports.Userdocumenttype= async(req, res)=>{
     try{
         const usuarios = await Usuario.findALL();
         res.json(usuarios);
@@ -25,7 +25,7 @@ exports.Usuariosdocumenttype= async(req, res)=>{
     
 }
 
-exports.Usuariosname= async(req, res)=>{
+exports.Username= async(req, res)=>{
     try{
         const usuarios = await Usuario.findALL();
         res.json(usuarios);
@@ -37,7 +37,7 @@ exports.Usuariosname= async(req, res)=>{
     
 }
 
-exports.Usuariossurnames= async(req, res)=>{
+exports.Userlastnames= async(req, res)=>{
     try{
         const usuarios = await Usuario.findALL();
         res.json(usuarios);
@@ -49,7 +49,7 @@ exports.Usuariossurnames= async(req, res)=>{
     
 }
 
-exports.Usuariosemail= async(req, res)=>{
+exports.Useremail= async(req, res)=>{
     try{
         const usuarios = await Usuario.findALL();
         res.json(usuarios);
@@ -61,7 +61,7 @@ exports.Usuariosemail= async(req, res)=>{
     
 }
 
-exports.Usuariostel= async(req, res)=>{
+exports.Userphone= async(req, res)=>{
     try{
         const usuarios = await Usuario.findALL();
         res.json(usuarios);
@@ -73,7 +73,7 @@ exports.Usuariostel= async(req, res)=>{
     
 }
 
-exports.Usuariosnationality= async(req, res)=>{
+exports.Usernationality= async(req, res)=>{
     try{
         const usuarios = await Usuario.findALL();
         res.json(usuarios);
