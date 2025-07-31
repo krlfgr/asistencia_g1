@@ -1,6 +1,6 @@
 const Attendance = require('../models/attendance');
 
-// Crear nueva asistencia
+
 exports.createAttendance = async (req, res) => {              // Crear nueva asistencia
   const { user_id, date, entry_time, exit_time, course_id } = req.body;
 
