@@ -9,7 +9,11 @@ const User = sequelize.define('User',{
     },
     documentType:{
         type:DataTypes.INTEGER,
-        allowNull:false
+        allowNull:false,
+        references: {
+            model: doctype,
+            key: 'id'
+        }
     },
     name:{
         type:DataTypes.STRING,
@@ -21,7 +25,8 @@ const User = sequelize.define('User',{
     },
     email:{
         type:DataTypes.STRING,
-        allowNull:unique
+        allowNull:false,
+        unique:true
     },
     phone:{
         ttype:DataTypes.INTEGER,
